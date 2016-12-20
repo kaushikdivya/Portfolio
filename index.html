@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Sample site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Lato:100,300');
-    </style>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
     <div class="container">
-        <article>
-            <header>
-                <div class="row">
-                    <div class="col-md-6 col-xs-4">
-                        <img class="img-responsive super_logo" src="images/Fall-leaves-7-free-autumn-and-fall-clip-art-collections-2-clipartcow.png" alt="Logo fall leaves image">
-                    </div>
-                    <div class="col-md-6 col-xs-8 text-right">
-                        <h1 class="text_thin super_title title">DIVYA KAUSHIK</h1>
-                        <h3 class="subtitle">FRONT-END NINJA</h3>
-                    </div>       
+        <header class="row">
+                <div class="col-md-6 col-xs-4">
+                    <img class="img-responsive super-logo" src="images/Fall-leaves-7-free-autumn-and-fall-clip-art-collections-2-clipartcow.png" alt="Logo fall leaves image">
                 </div>
-            </header>
-        </article>
+                <div class="col-md-6 col-xs-8 text-right">
+                    <h1 class="text-thin super-title title">DIVYA KAUSHIK</h1>
+                    <h3 class="subtitle">FRONT-END NINJA</h3>
+                </div>       
+        </header>
+
 
         <main>
-            <section class="center">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <hr>
-                    </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <hr>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <picture>
-                            <img class="img-responsive center-block center-image" src="images/36673529-technology-images.png" alt="Center image which has various devices">
-                        </picture>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <h2 class="text_muted">Featured Work</h2>
-                    </div>
-                </div>
-            </section>  
 
-            <section class="middle">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 text-center">
-                        <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img1" src="images/project1.jpg" alt="Udacity movie banner project image">
-                        <h4>Movie Banner project</h4>
-                        <h5><a href="https://github.com/kaushikdivya/Udacity-Movie-Trailer-Website">Link to project </a></h5>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center">
-                        <picture>
-                            <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img2" src="images/project2.jpg" alt="Udacity portfolio project image">
-                        </picture>
-                        <h4>Portfolio project </h4>
-                        <h5><a href="https://github.com/kaushikdivya/Portfolio">Link to project</a></h5>
-                    </div>
-                    <div class="col-md-4 col-xs-12 text-center">
-                        <picture>
-                            <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img3" src="images/coming-soon.jpg" alt="Under-Construction site">
-                        </picture>
-                        <h4>Under Construction</h4>
-                        <h5>Link to project </h5>
-                    </div>
+                <div class="col-md-12 col-xs-12">
+                    <img class="img-responsive center-block center-image" src="images/36673529-technology-images.png" alt="Center image which has various devices">
                 </div>
-            </section>
+
+                <div class="col-md-12 col-xs-12">
+                    <h2 class="text-muted">Featured Work</h2>
+                </div>
+
+            <div class="row">
+                <div class="col-md-4 col-xs-12 text-center">
+                    <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img1" src="images/project1.jpg" alt="Udacity movie banner project image">
+                    <h4>Movie Banner project</h4>
+                    <h5><a href="https://github.com/kaushikdivya/Udacity-Movie-Trailer-Website" target="_blank">Link to project </a></h5>
+                </div>
+                <div class="col-md-4 col-xs-12 text-center">
+                    <picture>
+                        <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img2" src="images/project2.jpg" alt="Udacity portfolio project image">
+                    </picture>
+                    <h4>Portfolio project </h4>
+                    <h5><a href="https://github.com/kaushikdivya/Portfolio" target="_blank">Link to project</a></h5>
+                </div>
+                <div class="col-md-4 col-xs-12 text-center">
+                    <picture>
+                        <img class="img-responsive center-block project-image" data-toggle="modal" data-target="#proj_img3" src="images/coming-soon.jpg" alt="Under-Construction site">
+                    </picture>
+                    <h4>Under Construction</h4>
+                    <h5>Link to project </h5>
+                </div>
+            </div>
         </main>
 
         <div class="modal fade" id="proj_img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
@@ -84,7 +70,7 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="images/project2.jpg" alt="Udacity movie banner project image">
-                        This was my first project in this class. I learned a lot about objects and classes.
+                        <p>This was my first project in this class. I learned a lot about objects and classes.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -101,7 +87,7 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="images/project2.jpg" alt="Udacity portfolio project image">
-                        In this project, I learned a lot about HTML and CSS.
+                        <p>In this project, I learned a lot about HTML and CSS.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -118,7 +104,7 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="images/project3.jpg" alt="Under-Construction site">
-                        Under-Construction :)
+                        <p>Under-Construction :)</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
