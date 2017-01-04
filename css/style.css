@@ -49,13 +49,8 @@ hr {
     margin-top: 10px;
 }
 
-.center-image{
-    width: 100%;
-    max-height: 360px;
-}
-
 .project-image {
-    height: 300px;
+
     box-shadow: 20px 20px 50px 20px pink;  
 }
 
@@ -79,13 +74,10 @@ hr {
     }
 
     .center-image {
-        width: 100%;
-        height: auto;
     }
 
     .project-image {
-        max-height: 300px;
-        width:100%;
+
         box-shadow: 20px 20px 50px 20px pink; 
     }
 }
@@ -93,7 +85,7 @@ hr {
 
 @media screen and (min-width: 601px) and (max-width: 991px){
     .project-image {
-        width: 60%;
+
         box-shadow: 20px 20px 50px 20px pink; 
     }
 
